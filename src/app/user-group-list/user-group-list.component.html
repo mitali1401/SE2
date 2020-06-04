@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-sm ">
+
+  <app-header-component class="w-100"></app-header-component>
+</nav>
+
+<div class="row m-0 bgimg">
+  <div class="col-12 col-sm-12 col-md-3 col-lg-3 border-bottom-1">
+    <app-side-component></app-side-component>
+
+  </div>
+
+  <div class="col-12 col-sm-12 col-md-8 col-lg-8 Create">
+      <h5 style="font-size: large;color: antiquewhite; margin-top: 10px;">Get all users and their group</h5>
+
+    <div class=" table-wrapper-scroll-y my-custom-scrollbar table">
+
+      <div class="border">
+        <table class="table table-bordered table-striped mb-0">
+          <thead>
+            <tr>
+              <th scope="col"> Id</th>
+              <th scope="col">User name</th>
+              <th scope="col">group name</th>
+
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let UserGroupDetails of UserGroupDetails">
+
+
+              <td>{{UserGroupDetails.id}}</td>
+              <td>{{unm}}</td>
+              <td>{{gnm}}</td>
+
+
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+  
+</div>

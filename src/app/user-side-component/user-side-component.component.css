@@ -1,0 +1,31 @@
+.sidebar-list{
+    margin: 30px 0px;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,41,89,1) 100%, rgba(0,212,255,1) 100%);
+     */
+}
+.btnGroup ,.btnGrpList,.btnUserGroupList,.btnUserList,.btnMemeberDetails{
+    margin-bottom: 15px;
+   
+
+}
+.navbar{
+    background: rgb(2,0,36,0.08);    
+}
+.btnGroup{
+    padding-right: 55px;
+}
+.btnGrpList
+{
+    padding-right: 62px;
+}
+.btnUserGroupList{
+    padding-right: 57px;
+
+}
+.btnUserList{
+    padding-right: 65px;
+}
+.btnMemeberDetails{
+    padding-right: 32px;   
+}

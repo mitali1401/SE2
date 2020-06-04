@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-sm ">
+
+    <app-header-component class="w-100"></app-header-component>
+</nav>
+
+
+<div class="row m-0 bgimg">
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3 border-bottom-1">
+        <app-side-component></app-side-component>
+
+    </div>
+    <div class="col-12 col-sm-12 col-md-8 col-lg-8 create">
+        <p style="color: antiquewhite; font-size: large;margin-top: 10px;">Get user group details by group id</p>
+        <div class="row ">
+                <div class="col gidtxt">
+                    <input type="text" [(ngModel)]="userGroupInfo.group_id" class="form-control" placeholder="group_id">
+                </div>
+
+                <div class="col">
+                    <button class="btn btn-success btn-md"
+                        (click)="loadUserGroupsInfo(userGroupInfo.group_id)" color="primary">get Info</button>
+                </div>
+            
+
+        </div>
+
+        <div class=" table-wrapper-scroll-y my-custom-scrollbar table userDetails ">
+
+            <div class="border">
+                <table class="table table-bordered table-striped mb-0">
+                    <thead>
+                        <tr>
+
+                            <th scope="col">user name</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of dummy_data">
+
+                            <td>{{user}}</td>
+
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

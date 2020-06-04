@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-sm ">
+
+  <app-header-component class="w-100"></app-header-component>
+</nav>
+
+<div class="row  m-0 bgimg">
+  <div class="col-12 col-sm-12 col-md-3 col-lg-3 border-bottom-1">
+    <app-side-component></app-side-component>
+
+  </div>
+  <div class="col-12 col-sm-12 col-md-5 col-lg-5 Create">
+    <h2 style="color: antiquewhite;">Create User</h2>
+    <!-- <div class="form-group">    
+        -->
+    <div class="form-group" [formGroup]="myGroup">
+
+      <input class="form-control" placeholder="id" [(ngModel)]="users.id" formControlName="id" required>
+
+
+    </div>
+
+    <div class="form-group" [formGroup]="myGroup">
+
+      <input class="form-control" placeholder="First Name" [(ngModel)]="users.first_name" formControlName="first_name"
+        required>
+
+
+    </div>
+    <div class="form-group" [formGroup]="myGroup">
+
+      <input class="form-control" placeholder="Last Name" [(ngModel)]="users.last_name" formControlName="last_name"
+        required>
+
+
+    </div>
+    <div class="form-group" [formGroup]="myGroup">
+
+      <input class="form-control" placeholder="designation" [(ngModel)]="users.designation" formControlName="username"
+        required>
+
+
+
+    </div>
+    <div class="form-group" [formGroup]="myGroup">
+
+      <input class="form-control" placeholder="email" [(ngModel)]="users.email" formControlName="username" required>
+
+
+
+    </div>
+    <div class="form-group" [formGroup]="myGroup">
+
+      <input class="form-control" type="password" [(ngModel)]="users.password" placeholder="Password"
+        formControlName="password" required>
+
+
+    </div>
+    <div class="form-group" [formGroup]="myGroup">
+
+      <input class="form-control" type="text" [(ngModel)]="users.salary" placeholder="salary" formControlName="password"
+        required>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-success btnCreatgrp" (click)="onSubmitCreateUser()">Submit</button>
+      </div>
+
+      <div class="col">
+        <button type="button" class="btn btn-danger btnResetgrp" (click)="resetUser()">Reset</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
